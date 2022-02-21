@@ -22,6 +22,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-list.component';
+import { LoginComponent } from './components/login/login.component';
 
 // Para trabalhar com formulários no Angular 12
 // Para realizar requisições HTTP
@@ -32,7 +33,8 @@ import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-l
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    TecnicoListComponent
+    TecnicoListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
