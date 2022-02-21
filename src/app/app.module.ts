@@ -23,6 +23,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Para trabalhar com formulários no Angular 12
 // Para realizar requisições HTTP
@@ -35,6 +36,7 @@ import { LoginComponent } from './components/login/login.component';
     HeaderComponent,
     TecnicoListComponent,
     LoginComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -55,6 +57,8 @@ import { LoginComponent } from './components/login/login.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
