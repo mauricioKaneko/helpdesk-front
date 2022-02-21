@@ -24,6 +24,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 // Para trabalhar com formulários no Angular 12
 // Para realizar requisições HTTP
@@ -58,7 +59,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatListModule,
     MatCardModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot({
+      timeOut:4000,
+      closeButton:true,
+      progressBar:true
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
