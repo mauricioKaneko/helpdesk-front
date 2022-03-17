@@ -68,7 +68,7 @@ import { HttpClientModule } from '@angular/common/http';
       progressBar:true
     })
   ],
-  providers: [],
+  providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
