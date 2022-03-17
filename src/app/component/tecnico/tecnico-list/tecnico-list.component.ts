@@ -16,9 +16,6 @@ export class TecnicoListComponent implements OnInit {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
  
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-  }
   constructor(
     private service: TecnicoService
   ) { }
@@ -31,7 +28,13 @@ export class TecnicoListComponent implements OnInit {
     this.service.findall().subscribe(resposta=>{
       this.ELEMENT_DATA = resposta
       this.dataSource = new MatTableDataSource<Tecnico>(this.ELEMENT_DATA);
+      this.dataSource.paginator = this.paginator;
     })
+  }
+
+  applyFilter(event: Event){
+    const filterValue =(event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
 }
