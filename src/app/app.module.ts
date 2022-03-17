@@ -25,6 +25,7 @@ import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-l
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
 
 // Para trabalhar com formulários no Angular 12
 // Para realizar requisições HTTP
@@ -60,6 +61,7 @@ import { ToastrModule } from 'ngx-toastr';
     MatCardModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule ,
     ToastrModule.forRoot({
       timeOut:4000,
       closeButton:true,
