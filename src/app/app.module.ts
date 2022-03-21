@@ -28,6 +28,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 // Para trabalhar com formulários no Angular 12
 // Para realizar requisições HTTP
@@ -69,7 +70,8 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
       timeOut:4000,
       closeButton:true,
       progressBar:true
-    })
+    }),
+    NgxMaskModule.forRoot(),
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
