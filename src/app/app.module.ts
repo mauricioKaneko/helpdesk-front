@@ -22,7 +22,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
-import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-list.component';
+import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
@@ -33,7 +33,7 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
 // Para realizar requisições HTTP
 // Imports para componentes do Angular Material
 @NgModule({
-  declarations: [
+  declarations: [ 
     AppComponent,
     NavComponent,
     HomeComponent,
@@ -44,7 +44,7 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
     
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
