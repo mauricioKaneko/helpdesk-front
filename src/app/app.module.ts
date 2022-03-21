@@ -27,6 +27,7 @@ import { LoginComponent } from './components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { HttpClientModule } from '@angular/common/http';
+import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 
 // Para trabalhar com formulários no Angular 12
 // Para realizar requisições HTTP
@@ -38,7 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     HeaderComponent,
     TecnicoListComponent,
-    LoginComponent
+    LoginComponent,
+    TecnicoCreateComponent
     
   ],
   imports: [
