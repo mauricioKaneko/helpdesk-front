@@ -36,3 +36,7 @@ p{
 mat-icon{
   opacity: .5;
 }
+
+.edit{
+  color: rgba(58, 82, 223, 0.856);
+}
