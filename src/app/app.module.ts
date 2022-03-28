@@ -36,6 +36,7 @@ import { ClienteUpdateComponent } from './components/cliente/cliente-update/clie
 import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
 import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
+import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
 
 // Para trabalhar com formulários no Angular 12
 // Para realizar requisições HTTP
@@ -55,7 +56,8 @@ import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-
     ClienteCreateComponent,
     ClienteDeleteComponent,
     ClienteUpdateComponent,
-    ChamadoListComponent
+    ChamadoListComponent,
+    ChamadoCreateComponent
     
   ],
   imports: [
